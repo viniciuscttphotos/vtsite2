@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinicius Theodoro - Fotógrafo especializado em eventos noturnos, shows, baladas e festas em Curitiba. Transforme a energia dos seus eventos em imagens memoráveis.">
+    <meta name="keywords" content="fotógrafo curitiba, eventos noturnos, shows, baladas, festas, fotografia de eventos">
+    <meta name="author" content="Vinicius Theodoro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vinicius Theodoro Fotografia">
+    <meta property="og:description" content="Fotógrafo especializado em eventos noturnos em Curitiba">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    
+    <title>Vinicius Theodoro | Fotografia de Eventos Noturnos</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Popup -->
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="welcome-popup-content">
+            <button class="welcome-popup-close" id="welcomePopupClose" aria-label="Fechar">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="welcome-popup-header">
+                <img src="assets/logo.png" alt="Vinicius Theodoro" class="welcome-popup-logo">
+                <h2 class="welcome-popup-title">Bem-vindo!</h2>
+                <p class="welcome-popup-subtitle">Como posso ajudar você hoje?</p>
+            </div>
+            <div class="welcome-popup-buttons">
+                <a href="https://banlek.com/lowlight" target="_blank" rel="noopener noreferrer" class="welcome-popup-btn welcome-popup-btn-primary">
+                    <i class="fas fa-shopping-bag"></i> Comprar Fotos
+                </a>
+                <a href="#fotos" class="welcome-popup-btn welcome-popup-btn-secondary scroll-smooth">
+                    <i class="fas fa-images"></i> Navegar no Site
+                </a>
+                <a href="https://wa.me/5541997644023" target="_blank" rel="noopener noreferrer" class="welcome-popup-btn welcome-popup-btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5541997644023" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="Vinicius Theodoro" class="logo-img">
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#fotos" class="nav-link">Fotos</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li>
+                    <a href="https://banlek.com/lowlight" target="_blank" rel="noopener noreferrer" class="nav-cta">
+                        <i class="fas fa-shopping-bag"></i> Comprar Fotos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/foto1.jpg" alt="Show ao vivo" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-line">Capturando a</span>
+                <span class="hero-title-line accent">Energia da Noite</span>
+            </h1>
+            <p class="hero-subtitle">Fotografia profissional de eventos, shows e casas noturnas</p>
+            
+            <div class="hero-cta">
+                <a href="#fotos" class="btn btn-primary scroll-smooth">
+                    <i class="fas fa-images"></i> Ver Fotos
+                </a>
+                <a href="https://banlek.com/lowlight" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fas fa-shopping-bag"></i> Comprar Fotos
+                </a>
+            </div>
+        </div>
+        
+        <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- Sobre Section -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-image">
+                    <img src="assets/sobre.jpg" alt="Vinicius Theodoro" class="foto-sobre">
+                    <div class="sobre-image-border"></div>
+                </div>
+                
+                <div class="sobre-content">
+                    <span class="section-tag">Sobre Mim</span>
+                    <h2 class="section-title">Vinicius Theodoro</h2>
+                    <p class="sobre-text">
+                        Sou Vinicius Theodoro, fotógrafo especializado em eventos noturnos há mais de 15 anos. 
+                        Minha missão é transformar a energia de shows, baladas e festas em imagens que contam histórias.
+                    </p>
+                    <p class="sobre-text">
+                        Trabalhando em Curitiba, atendo eventos em toda a região. Cada clique é uma oportunidade de 
+                        capturar momentos únicos e memoráveis.
+                    </p>
+                    
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Anos de experiência</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3mil+</span>
+                            <span class="stat-label">Eventos cobertos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5mi+</span>
+                            <span class="stat-label">Fotos entregues</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades Section -->
+    <section class="especialidades" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">O que faço</span>
+                <h2 class="section-title">Especialidades</h2>
+            </div>
+            
+            <div class="especialidades-grid">
+                <div class="especialidade-card">
+                    <div class="especialidade-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="especialidade-title">Shows</h3>
+                    <p class="especialidade-desc">Capturando a energia dos artistas e a vibração do público em cada performance</p>
+                </div>
+                
+                <div class="especialidade-card">
+                    <div class="especialidade-icon">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <h3 class="especialidade-title">Baladas</h3>
+                    <p class="especialidade-desc">A atmosfera única das casas noturnas, DJs e pistas de dança iluminadas</p>
+                </div>
+                
+                <div class="especialidade-card">
+                    <div class="especialidade-icon">
+                        <i class="fas fa-champagne-glasses"></i>
+                    </div>
+                    <h3 class="especialidade-title">Festas</h3>
+                    <p class="especialidade-desc">Cada celebração merece ser documentada com qualidade profissional</p>
+                </div>
+                
+                <div class="especialidade-card">
+                    <div class="especialidade-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="especialidade-title">Eventos</h3>
+                    <p class="especialidade-desc">Eventos corporativos, lançamentos e ocasiões especiais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Sections -->
+    <section class="hero-section" id="fotos">
+        <div class="hero-section-bg">
+            <img src="assets/foto2.jpg" alt="Show ao vivo" class="hero-section-image">
+            <div class="hero-section-overlay"></div>
+        </div>
+        <div class="hero-section-content">
+            <h2 class="hero-section-title">Shows ao Vivo</h2>
+            <p class="hero-section-desc">A energia crua do palco, a adrenalina da multidão. Cada show é uma história esperando para ser contada através das minhas lentes.</p>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-section-bg">
+            <img src="assets/foto3.jpg" alt="Casa noturna" class="hero-section-image">
+            <div class="hero-section-overlay"></div>
+        </div>
+        <div class="hero-section-content">
+            <h2 class="hero-section-title">Casas Noturnas</h2>
+            <p class="hero-section-desc">O pulsar da noite curitibana. Luzes que dançam, sombras que contam segredos. A atmosfera que só quem vive sabe traduzir.</p>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-section-bg">
+            <img src="assets/foto4.jpg" alt="Público" class="hero-section-image">
+            <div class="hero-section-overlay"></div>
+        </div>
+        <div class="hero-section-content">
+            <h2 class="hero-section-title">O Público</h2>
+            <p class="hero-section-desc">Rostos que brilham, olhares que se encontram. Por trás de cada foto, existe uma conexão humana que transcende o momento.</p>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-section-bg">
+            <img src="assets/foto5.jpg" alt="Banda" class="hero-section-image">
+            <div class="hero-section-overlay"></div>
+        </div>
+        <div class="hero-section-content">
+            <h2 class="hero-section-title">Detalhes</h2>
+            <p class="hero-section-desc">Cada performance é única, cada clique preserva a essência de quem se entrega ao público. A arte em sua forma mais pura.</p>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-section-bg">
+            <img src="assets/foto6.jpg" alt="Luzes" class="hero-section-image">
+            <div class="hero-section-overlay"></div>
+        </div>
+        <div class="hero-section-content">
+            <h2 class="hero-section-title">Luzes e Cores</h2>
+            <p class="hero-section-desc">A magia dos neon, o brilho das estrelas. Transformo a escuridão em canvas e a luz em poesia visual.</p>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="hero-section-bg">
+            <img src="assets/foto7.jpg" alt="Conexão" class="hero-section-image">
+            <div class="hero-section-overlay"></div>
+        </div>
+        <div class="hero-section-content">
+            <h2 class="hero-section-title">Conexões</h2>
+            <p class="hero-section-desc">Mais que fotografar eventos, eu capturo encontros. Momentos que conectam pessoas, memórias que duram para sempre.</p>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Feedback</span>
+                <h2 class="section-title">O que dizem sobre meu trabalho</h2>
+            </div>
+            
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-text">
+                        "O Vinicius capturou a essência do nosso show de forma incrível. As fotos transmitiram 
+                        toda a energia que queríamos passar ao público. Profissionalismo nota 10!"
+                    </p>
+                    <div class="depoimento-autor">
+                        <span class="autor-nome">Banda Explosão Neon</span>
+                        <span class="autor-tipo">Artista / Banda</span>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-text">
+                        "Trabalho com eventos há anos e posso dizer que o Vinicius é um dos melhores fotógrafos 
+                        de eventos noturnos que já contratei. Entrega rápida e qualidade excepcional."
+                    </p>
+                    <div class="depoimento-autor">
+                        <span class="autor-nome">Carlos Mendes</span>
+                        <span class="autor-tipo">Produtor de Eventos</span>
+                    </div>
+                </div>
+                
+                <div class="depoimento-card">
+                    <div class="depoimento-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="depoimento-text">
+                        "Comprei as fotos do show e ficaram simplesmente perfeitas! Consegui várias fotos 
+                        ótimas para postar nas redes sociais. Super recomendo!"
+                    </p>
+                    <div class="depoimento-autor">
+                        <span class="autor-nome">Fernanda Lima</span>
+                        <span class="autor-tipo">Cliente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para ver suas fotos?</h2>
+                <p class="cta-text">
+                    Acesse nossa loja e encontre todas as imagens dos seus eventos favoritos.
+                    Fotos em alta resolução para download imediato.
+                </p>
+                <a href="https://banlek.com/lowlight" target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+                    <i class="fas fa-external-link-alt"></i> Ir para a Loja
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Vinicius Theodoro" class="footer-logo">
+                    <p class="footer-tagline">Transformando momentos em memórias</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5541997644023" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vinicius Theodoro Fotografia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="Imagem ampliada" class="lightbox-image" id="lightboxImage">
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
