@@ -251,6 +251,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeWelcomePopup = () => {
         welcomePopup.classList.remove('active');
         document.body.style.overflow = '';
+        // Rola a página para o topo quando o popup é fechado
+        window.scrollTo(0, 0);
     };
     
     if (welcomePopup) {
