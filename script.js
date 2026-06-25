@@ -248,11 +248,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     };
     
-    const closeWelcomePopup = () => {
+    const closeWelcomePopup = (scrollToTop = true) => {
         welcomePopup.classList.remove('active');
         document.body.style.overflow = '';
         // Rola a página para o topo quando o popup é fechado
-        window.scrollTo(0, 0);
+        if (scrollToTop) {
+            window.scrollTo(0, 0);
+        }
     };
     
     if (welcomePopup) {
@@ -282,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (browseBtn) {
             browseBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                closeWelcomePopup();
+                closeWelcomePopup(false);
                 const targetId = browseBtn.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
                 if (targetSection) {
